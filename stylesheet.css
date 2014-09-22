@@ -1,0 +1,120 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #3d3d3d;
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+}
+
+.selected{
+	z-index: 1;
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+    -webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
+}
+
+.unselected{
+	z-index: 2;
+	bottom: 100%;
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+   -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+
+.unselected-0{
+	left:0%;
+}
+
+.unselected-1{
+	left: 23.54%;
+}
+
+.unselected-2{
+	left: 39.04%;
+}
+
+.unselected-3{
+	left: 54.54%;
+}
+
+.unselected-4{
+	left: 70.4%;
+}
+
+#home-tab {
+	background: #e0e4cc;
+}
+
+#projects-tab {
+	background: #69D2E7;
+}
+
+#resume-tab {
+	background: #A7DBD8;
+}
+
+#contact-tab {
+	background: #F38630;
+}
+
+#misc-tab {
+	background: #FA6900;
+}
+
+.tab{
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    -webkit-transform-origin: 10.96% 100%;
+    -moz-transform-origin: 10.96% 100%;
+    -ms-transform-origin: 10.96% 100%;
+    -o-transform-origin: 10.96% 100%;
+    transform-origin: 10.96% 100%;
+}
+
+.unselected:hover .tab-descriptor{
+	opacity:100;
+}
+
+.tab-icon{
+	position: absolute;
+	width: 3.875%;
+	bottom: 0%;
+	left: 0%;
+	margin:1%;
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+
+.tab-descriptor{
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+	position:absolute; 
+	margin:1%;
+	width:3.875%;
+	padding:0%;
+	left: 0%;
+	bottom: 7%;
+	opacity:100;
+}
+
+.unselected-image{
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+h1{
+	font-size: 36px;
+	text-align:center;
+}
+
