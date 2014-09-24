@@ -13,16 +13,18 @@ div {
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     transform: rotate(0deg);
-    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
-    -webkit-transition-delay: 1s; /* Safari */
-    transition-delay: 1s;
+    -webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform 0.5s;
+    -o-transition:transform 0.5s;
+    -webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
 }
 
 .unselected-1{
 	z-index: 2;
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
+	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform 0.5s;
+    -o-transition:transform 0.5s;
     -ms-transform: translate(23.54%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(23.54%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(23.54%,-100%)rotate(-45deg) ;
@@ -30,8 +32,9 @@ div {
 
 .unselected-2{
 	z-index: 2;
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
+	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform 0.5s;
+    -o-transition:transform 0.5s;
     -ms-transform: translate(39.04%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(39.04%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(39.04%,-100%)rotate(-45deg) ;
@@ -39,8 +42,9 @@ div {
 
 .unselected-3{
 	z-index: 2;
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
+	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform 0.5s;
+    -o-transition:transform 0.5s;
     -ms-transform: translate(54.54%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(54.54%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(54.54%,-100%)rotate(-45deg) ;
@@ -48,8 +52,9 @@ div {
 
 .unselected-4{
 	z-index: 2;
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
+	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform 0.5s;
+    -o-transition:transform 0.5s;
     -ms-transform: translate(70.04%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(70.04%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(70.04%,-100%)rotate(-45deg) ;
@@ -93,20 +98,8 @@ div {
 	bottom: 0%;
 	left: 0%;
 	margin:1%;
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
-}
-
-.tab-descriptor{
-	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
-	position:absolute; 
-	margin:1%;
-	width:3.875%;
-	padding:0%;
-	left: 0%;
-	bottom: 7%;
-	opacity:100;
+	-webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s;
 }
 
 h1{

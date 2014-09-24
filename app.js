@@ -9,7 +9,7 @@ var main = function() {
 		currentTab.toggleClass('selected');
 		currentTab.toggleClass('unselected')
 		clickedTab.toggleClass('selected');
-		clickedTab.toggleClass('unselected')
+		clickedTab.toggleClass('unselected');
 		
 		for(i=0; i<4; i++){
 			if(clickedTab.hasClass('unselected-' + (i + 1))){
