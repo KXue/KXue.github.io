@@ -8,7 +8,7 @@ body {
 div {
 }
 
-.selected{
+.unselected-0{
 	z-index: 1;
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
@@ -19,34 +19,40 @@ div {
     transition-delay: 1s;
 }
 
-.unselected{
+.unselected-1{
 	z-index: 2;
-	bottom: 100%;
 	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
     transition: all 1s;
-   -ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
-    transform: rotate(-45deg);
-}
-
-.unselected-0{
-	left:0%;
-}
-
-.unselected-1{
-	left: 23.54%;
+    -ms-transform: translate(23.54%,-100%) rotate(-45deg) ; /* IE 9 */
+    -webkit-transform: translate(23.54%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
+    transform: translate(23.54%,-100%)rotate(-45deg) ;
 }
 
 .unselected-2{
-	left: 39.04%;
+	z-index: 2;
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+    -ms-transform: translate(39.04%,-100%) rotate(-45deg) ; /* IE 9 */
+    -webkit-transform: translate(39.04%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
+    transform: translate(39.04%,-100%)rotate(-45deg) ;
 }
 
 .unselected-3{
-	left: 54.54%;
+	z-index: 2;
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+    -ms-transform: translate(54.54%,-100%) rotate(-45deg) ; /* IE 9 */
+    -webkit-transform: translate(54.54%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
+    transform: translate(54.54%,-100%)rotate(-45deg) ;
 }
 
 .unselected-4{
-	left: 70.4%;
+	z-index: 2;
+	-webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+    -ms-transform: translate(70.04%,-100%) rotate(-45deg) ; /* IE 9 */
+    -webkit-transform: translate(70.04%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
+    transform: translate(70.04%,-100%)rotate(-45deg) ;
 }
 
 #home-tab {
@@ -57,7 +63,7 @@ div {
 	background: #69D2E7;
 }
 
-#resume-tab {
+#blog-tab {
 	background: #A7DBD8;
 }
 
@@ -81,10 +87,6 @@ div {
     transform-origin: 10.96% 100%;
 }
 
-.unselected:hover .tab-descriptor{
-	opacity:100;
-}
-
 .tab-icon{
 	position: absolute;
 	width: 3.875%;
@@ -105,12 +107,6 @@ div {
 	left: 0%;
 	bottom: 7%;
 	opacity:100;
-}
-
-.unselected-image{
-	-ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
 }
 
 h1{
