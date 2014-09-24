@@ -9,7 +9,11 @@ body {
 div {
 }
 
-.info{
+a{
+	color: #3d3d3d;
+	text-decoration:none;
+}
+.content{
 	width: 62%;
 	height: 62%;
 	top: 19%;
@@ -19,10 +23,17 @@ div {
 	display: flex;
   	flex-direction: column;
 }
-.info > div{
+.content > div.info{
 	flex: 1;
 	overflow-y:scroll;
+	text-align:center;
 }
+
+.h-flex > a > img {
+	width: 100px;
+	height:100px;
+}
+
 .unselected-0{
 	z-index: 1;
 	-ms-transform: rotate(0deg); /* IE 9 */
