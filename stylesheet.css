@@ -8,6 +8,15 @@ body {
 div {
 }
 
+.info{
+	width: 62%;
+	height: 62%;
+	top: 19%;
+	left: 19%;
+	position: absolute;
+	overflow-y:hidden;	
+}
+
 .unselected-0{
 	z-index: 1;
 	-ms-transform: rotate(0deg); /* IE 9 */
@@ -15,7 +24,6 @@ div {
     transform: rotate(0deg);
     -webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
     transition: transform 0.5s;
-    -o-transition:transform 0.5s;
     -webkit-transition-delay: 0.5s; /* Safari */
     transition-delay: 0.5s;
 }
@@ -24,7 +32,6 @@ div {
 	z-index: 2;
 	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
     transition: transform 0.5s;
-    -o-transition:transform 0.5s;
     -ms-transform: translate(23.54%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(23.54%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(23.54%,-100%)rotate(-45deg) ;
@@ -34,7 +41,6 @@ div {
 	z-index: 2;
 	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
     transition: transform 0.5s;
-    -o-transition:transform 0.5s;
     -ms-transform: translate(39.04%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(39.04%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(39.04%,-100%)rotate(-45deg) ;
@@ -44,7 +50,6 @@ div {
 	z-index: 2;
 	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
     transition: transform 0.5s;
-    -o-transition:transform 0.5s;
     -ms-transform: translate(54.54%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(54.54%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(54.54%,-100%)rotate(-45deg) ;
@@ -54,7 +59,6 @@ div {
 	z-index: 2;
 	-webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
     transition: transform 0.5s;
-    -o-transition:transform 0.5s;
     -ms-transform: translate(70.04%,-100%) rotate(-45deg) ; /* IE 9 */
     -webkit-transform: translate(70.04%,-100%) rotate(-45deg) ; /* Chrome, Safari, Opera */
     transform: translate(70.04%,-100%)rotate(-45deg) ;
