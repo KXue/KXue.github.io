@@ -1,6 +1,6 @@
 body, html {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #3d3d3d;
+	color: #FFFFFF;
 	margin: 0px;
 	padding: 0px;
 	overflow-x:hidden;
@@ -12,7 +12,7 @@ div {
 }
 
 a{
-	color: #3d3d3d;
+	color: #FFFFFF;
 	text-decoration:none;
 }
 .content{
@@ -37,23 +37,23 @@ a{
 }
 
 #home-tab {
-	background: #e0e4cc;
+	background: #34495e;
 }
 
 #projects-tab {
-	background: #69D2E7;
+	background: #9b59b6;
 }
 
 #blog-tab {
-	background: #A7DBD8;
+	background: #3498db;
 }
 
 #contact-tab {
-	background: #F38630;
+	background: #2ecc71;
 }
 
 #misc-tab {
-	background: #FA6900;
+	background: #1abc9c;
 }
 
 .tab{
