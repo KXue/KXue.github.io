@@ -30,8 +30,8 @@ a{
 }
 
 .h-flex > a > img {
-	width: 100px;
-	height:100px;
+	width: 3em;
+	height:3em;
 }
 
 #home-tab {
