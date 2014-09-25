@@ -20,6 +20,9 @@ var main = function() {
 				break;
 			}
 		}
-	});	
+	});
 }
 $(document).ready(main);
+$(document).bind('touchmove', function(e) {
+	e.preventDefault();
+});
