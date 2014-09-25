@@ -23,6 +23,7 @@ var main = function() {
 	});
 }
 $(document).ready(main);
-$(document).bind('touchmove', function(e) {
-	e.preventDefault();
-});
+// $(document).bind('touchmove', function(e) {
+	// console.log(e);
+	// e.preventDefault();
+// });
