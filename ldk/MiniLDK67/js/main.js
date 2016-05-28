@@ -22,7 +22,7 @@ var GameState = {
         this.cursors = this.input.keyboard.createCursorKeys();
 
         this.shipSprite = this.add.sprite(175, 20, 'ship');
-        this.shipSprite.scale.setTo(0.5, 0.5);
+        this.shipSprite.scale.setTo(0.6, 0.6);
         this.shipSprite.anchor.set(0.5);
         this.physics.enable(this.shipSprite, Phaser.Physics.ARCADE);
         this.shipSprite.body.drag.set(100);
@@ -137,7 +137,9 @@ var GameState = {
         lastSprite.nextSprite = trailSprite;
         trailSprite.tint = 0xff0000;
         trailSprite.anchor.setTo(0.5);
-        trailSprite.scale.setTo(0.5, 0.5);
+        trailSprite.scale.setTo(0.6, 0.6);
+        trailSprite.body.setSize(40, 40, 4, 4);
+        console.log(trailSprite.body.width);
         trailSprite.trailQueueX = new Queue();
         trailSprite.trailQueueY = new Queue();
         trailSprite.directionQueue = new Queue();
@@ -151,15 +153,15 @@ var GameState = {
         
         sprite.directionQueue.enqueue(sprite.rotation);
         
-        if(sprite.trailQueueX.getLength() > 60)
+        if(sprite.trailQueueX.getLength() > 45)
         {
             sprite.trailQueueX.dequeue();
         }
-        if(sprite.trailQueueY.getLength() > 60)
+        if(sprite.trailQueueY.getLength() > 45)
         {
             sprite.trailQueueY.dequeue();
         }
-        if(sprite.directionQueue.getLength() > 60)
+        if(sprite.directionQueue.getLength() > 45)
         {
             sprite.directionQueue.dequeue();
         }
@@ -188,7 +190,7 @@ var GameState = {
             firstSprite = firstSprite.nextSprite;
         }
         
-        if(this.lastShip.directionQueue.getLength() >= 60 && this.trailNumber > 0)
+        if(this.lastShip.directionQueue.getLength() >= 45 && this.trailNumber > 0)
         {
             this.addTrailSprite(this.lastShip);
             this.trailNumber--;
