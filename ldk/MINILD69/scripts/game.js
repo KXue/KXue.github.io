@@ -895,7 +895,7 @@ var Preload = (function (_Phaser$State) {
 	_createClass(Preload, [{
 		key: 'preload',
 		value: function preload() {
-			this.game.load.image('hexTile', '../assets/hexTile300.png');
+			this.game.load.image('hexTile', 'assets/hexTile300.png');
 		}
 	}, {
 		key: 'create',
