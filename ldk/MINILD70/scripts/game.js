@@ -454,6 +454,7 @@ var GameState = function (_Phaser$State) {
       this.game.stage.backgroundColor = '#cecece';
       this.cursors = this.game.input.keyboard.createCursorKeys();
       this.dashButton = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+      this.game.input.keyboard.addKeyCapture(Phaser.Keyboard.SPACEBAR);
       this.player = new _PlayerSprite2.default(this.game, new Phaser.Point(center.x, 600));
       this.boss = new _BossSprite2.default(this.game, center);
       this.dashEndTime = 0;
