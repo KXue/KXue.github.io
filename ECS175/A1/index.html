@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="WebGL.js" type="text/javascript"></script>
+  <script src="Sierpinski.js" type="text/javascript"></script>
+  <script src="Conchoid.js" type="text/javascript"></script>
+  <script src="Controller.js" type="text/javascript"></script>
+  <script src="Chaikin.js" type="text/javascript"></script>
+  <script src="Books.js" type="text/javascript"></script>
+</head>
+<body onload = "Ready()">
+  <canvas id="GLCanvas" width="600" height="600">
+      Your Browser Doesn't Support HTML5's Canvas.
+  </canvas>
+  <ul class = "tabs">
+    <li>
+      <input type = "radio" name="tabs" id="tab1" checked onchange = "SierpinskiChecked()"/>
+      <label for="tab1">Sierpinski</label>
+      <div id="tab-content1" class="tab-content">
+        <label for "level-slider">Levels: (1-7)</label>
+        <input id = "level-slider" type = "range" min = "1" max = "7" step = "1" oninput = "LevelChange()" value = "1"/>
+        <label for "level-slider">1</label>
+        <br>
+        Bound:
+        <label for "bound-x">X:</label>
+        <input id = "bound-x" type = "number" min = "-1.0" max = "1.0" oninput = "BoundXChange()" value = "-1.0"/>
+        <label for "bound-y">Y:</label>
+        <input id = "bound-y" type = "number" min = "-1.0" max = "1.0" oninput = "BoundYChange()" value = "-1.0"/>
+        <br>
+        <label for "side-length">Side Length: </label>
+        <input id="side-length" type = "number" min = "0" max = "2.0" oninput = "SideLengthChange()" value = "2.0"/>
+      </div>
+    </li>
+    <li>
+      <input type = "radio" name="tabs" id="tab2" onchange = "ConchoidChecked()"/>
+      <label for="tab2">Conchoid of Nicomedes</label>
+      <div id="tab-content2" class="tab-content">
+        <label for "conch-a">a: </label>
+        <input id = "conch-a" type = "number" oninput = "ConchoidAChange()" value = "1.0"/>
+        <label for "conch-b">b: </label>
+        <input id = "conch-b" type = "number" oninput = "ConchoidBChange()" value = "2.0"/>
+        <br>
+        <label for "max-value">Max value: </label>
+        <input id = "max-value" type = "number" oninput = "ZoomChange()" value = "1.0"/>
+      </div>
+    </li>
+    <li>
+      <input type = "radio" name="tabs" id="tab3" onchange = "ChaikinChecked()"/>
+      <label for="tab3">Chaikin's Curve (Outline)</label>
+      <div id="tab-content3" class="tab-content">
+        Draw your control points! Curve automatically closes.
+        <br>
+        <label for "back-button">Level: 1 </label>
+        <button id = "back-button" onclick = "DivideBack()">-</button>
+        <button id = "forward-button" onclick = "DivideForward()">+</button>
+        <button id = "closed-open-button" onclick = "toggleOpenClose()">Closed</button>
+      </div>
+    </li>
+  </ul>
+  <label for "color-input">Color: </label><input id = "color-input" type="text" name="Color" maxlength = "9" onkeyup = "ColorChange()"/>
+  <script id="VertexShader" type="x-shader/x-vertex">
+    attribute highp vec2 VertexPosition;
+    uniform highp mat4 ModelMatrix;
+    uniform highp mat4 PerspectiveMatrix;
+
+    void main(void) {
+      gl_PointSize = 3.0;
+			gl_Position = ModelMatrix * PerspectiveMatrix * vec4(VertexPosition, 0.0, 1.0);
+		}
+  </script>
+  <script id="FragmentShader" type="x-shader/x-fragment">
+    uniform highp vec4 Color;
+    void main(void) {
+			gl_FragColor = Color;
+		}
+  </script>
+</body>
+</html>

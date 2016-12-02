@@ -1,8 +1,367 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-  </body>
+	<!--Metadata-->
+	<meta charset="utf-8"/>
+	<meta name="description" content="Yi Fei Xue's Portfolio"/>
+	<meta name="author" content="Yi Fei Xue"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<!--Various Favicons for various devices-->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png"/>
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png"/>
+	<link rel="manifest" href="assets/images/favicon/manifest.json"/>
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png"/>
+	<meta name="theme-color" content="#ffffff"/>
+
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300" rel="stylesheet"/>
+
+
+
+	<!--CSS links-->
+	<link type="text/css" rel="stylesheet" href="css/resetti.css"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="./js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="./js/isotope.pkgd.js"></script>
+
+	<title>Yi Fei Xue</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="mobile-top-bar">
+			<div class="jumbotron-profile">
+				<img src="assets/images/about_orange.svg" class="type"/>
+				<div class="me-img interactive">
+					<div class="equation more overlay"></div>
+				</div>
+				<h1 class="name">Yi Fei Xue</h1>
+				<p>They told me professional wizards don't exist, so I chose game developer instead.</p>
+			</div>
+			<nav>
+				<ul>
+					<li class="home interactive"><img src="assets/images/home_red.svg"></li>
+					<li class="about interactive"><img src="assets/images/about_orange.svg"></li>
+					<li class="games interactive"><img src="assets/images/games_green.svg"></li>
+					<li class="docs interactive"><img src="assets/images/resume_cyan.svg"></li>
+					<li class="contact interactive"><img src="assets/images/contact_blue.svg"></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="side-bar">
+			<div>
+				<div class="card" id="profile">
+					<div class="content">
+						<img src="assets/images/about_orange.svg" class="type"/>
+						<div class="content-img me-img rounded interactive">
+							<div class="equation more overlay"></div>
+						</div>
+					</div>
+					<h1 class="name">Yi Fei Xue</h1>
+					<p>They told me professional wizards don't exist, so I chose game developer instead.</p>
+				</div>
+				<nav class="mobile-filter">
+					<ul>
+						<li class="home interactive"><img src="assets/images/home_red.svg"></li>
+						<li class="about interactive"><img src="assets/images/about_orange.svg"></li>
+						<li class="games interactive"><img src="assets/images/games_green.svg"></li>
+						<li class="docs interactive"><img src="assets/images/resume_cyan.svg"></li>
+						<li class="contact interactive"><img src="assets/images/contact_blue.svg"></li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="card-stack">
+				<ul>
+					<li class="home card interactive">
+						<div>
+							<img src="assets/images/home.svg" class="type-icon"/>
+							<img src="assets/images/home.svg" class="main-icon"/>
+						</div>
+						<h1>Home</h1>
+					</li>
+					<li class="about card interactive">
+						<div>
+							<img src="assets/images/about.svg" class="type-icon"/>
+							<img src="assets/images/about.svg" class="main-icon"/>
+						</div>
+						<h1>About</h1>
+					</li>
+					<li class="games card interactive">
+						<div>
+							<img src="assets/images/games.svg" class="type-icon"/>
+							<img src="assets/images/games.svg" class="main-icon"/>
+						</div>
+						<h1>Games</h1>
+					</li>
+					<li class="docs card interactive">
+						<div>
+							<img src="assets/images/resume.svg" class="type-icon"/>
+							<img src="assets/images/resume.svg" class="main-icon"/>
+						</div>
+						<h1>Non-Code</h1>
+					</li>
+					<li class="contact card interactive">
+						<div>
+							<img src="assets/images/contact.svg" class="type-icon"/>
+							<img src="assets/images/contact.svg" class="main-icon"/>
+						</div>
+						<h1>Contact</h1>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content-div" class="grid">
+			<div class="grid-item card-stack about">
+				<div class="card against humanity answer interactive">
+					<p>
+						<img class="type" src="assets/images/about_orange.svg"/>
+						I want to convey my thoughts, ideas and feelings to others.
+					</p>
+					<div class="bottom-container">
+						<img src="assets/images/faceIcon_transBG.png"/>
+						<p class="bottom-text">Plz don't sue me CAH</p>
+					</div>
+				</div>
+
+				<div class="card against humanity question interactive">
+					<p>
+						<img class="type" src="assets/images/about_orange.svg"/>
+						I make video games because <span></span>.
+					</p>
+					<div class="bottom-container">
+						<img src="assets/images/faceIcon_transBG.png"/>
+						<p class="bottom-text">Plz don't sue me CAH</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-item card about">
+				<div class="content">
+					<img class="type" src="assets/images/about_orange.svg"/>
+					<div class="content-img phaser-img rounded"></div>
+				</div>
+				<h1 class="name">Set to Begun</h1>
+				<p>Made 2/10 Phaser games.</p>
+				<div class="progress-bar">
+					<div class="progress twenty"></div>
+				</div>
+			</div>
+
+			<div class="grid-item card about">
+				<div class="content">
+					<img class="type" src="assets/images/about_orange.svg"/>
+					<div class="content-img unity-img rounded"></div>
+				</div>
+				<h1 class="name">Sit Ununited</h1>
+				<p>Made 0/10 Unity games.</p>
+				<div class="progress-bar">
+					<div class="progress zero"></div>
+				</div>
+			</div>
+
+			<div id="snakesteroids" class="grid-item card games interactive">
+				<div class="content">
+					<img src="assets/images/games_green.svg" class="type"/>
+					<img src="assets/images/jam_red.svg" class="type secondary"/>
+					<div class="content-img snakesteroids-img rounded"></div>
+				</div>
+				<h1 class="name">Snakesteroids</h1>
+				<p>
+					Arcade mashup built with Phaser.
+				</p>
+				<div class="more overlay"></div>
+			</div>
+
+			<div id="overpopulate" class="grid-item card games interactive">
+				<div class="content">
+					<img src="assets/images/games_green.svg" class="type"/>
+					<img src="assets/images/project_yellow.svg" class="type secondary"/>
+					<div class="content-img overpopulate-img rounded"></div>
+				</div>
+				<h1 class="name">Overpopulate!</h1>
+				<p>
+					Turn based strategy built with Phaser.
+				</p>
+				<div class="more overlay"></div>
+			</div>
+
+			<div id="crysis" class="grid-item card games interactive">
+				<div class="content">
+					<img src="assets/images/games_green.svg" class="type"/>
+					<img src="assets/images/for_profit_green.svg" class="type secondary"/>
+					<div class="content-img crysis-img rounded"></div>
+				</div>
+				<h1 class="name">Crysis</h1>
+				<p>
+					First person shooter built with CryEngine.
+				</p>
+				<div class="more overlay"></div>
+			</div>
+
+			<div id="colour-resume" class="grid-item card docs interactive">
+				<div class="content">
+					<img src="assets/images/resume_cyan.svg" class="type"/>
+					<div class="content-img colour-resume-img rounded"></div>
+				</div>
+				<h1 class="name">Colour Resume</h1>
+				<a href="assets/resume/YiFeiXue.pdf" target="_blank"><div class="download overlay"></div></a>
+			</div>
+
+			<div id="greyscale-resume" class="grid-item card docs interactive">
+				<div class="content">
+					<img src="assets/images/resume_cyan.svg" class="type"/>
+					<div class="content-img grey-resume-img rounded"></div>
+				</div>
+				<h1 class="name">Greyscale Resume</h1>
+				<a href="assets/resume/YiFeiXueBW.pdf" target="_blank"><div class="download overlay"></div></a>
+			</div>
+
+			<div id="wordpress" class="grid-item card docs contact interactive">
+				<div class="content">
+					<img src="assets/images/resume.svg" class="type"/>
+					<img src="assets/images/contact.svg" class="type secondary"/>
+					<div class="content-img wordpress-img rounded"></div>
+				</div>
+				<a href="https://mentaldumpblog.wordpress.com/" target="_blank"><div class="link overlay"></div></a>
+			</div>
+			
+			<div id="email" class="grid-item card contact interactive">
+				<div class="content">
+					<img src="assets/images/contact_blue.svg" class="type"/>
+					<div class="content-img email-img"></div>
+				</div>
+				<a href="mailto:ivexnuke@gmail.com"><div class="link overlay"></div></a>
+			</div>
+
+			<div id="github" class="grid-item card contact interactive">
+				<div class="content">
+					<img src="assets/images/contact_blue.svg" class="type"/>
+					<div class="content-img github-img"></div>
+				</div>
+				<a href="https://github.com/KXue" target="_blank"><div class="link overlay"></div></a>
+			</div>
+
+			<div id="one-game" class="grid-item card contact interactive">
+				<div class="content">
+					<img src="assets/images/contact_blue.svg" class="type"/>
+					<div class="content-img one-game-img"></div>
+				</div>
+				<a href="http://www.onegameamonth.com/ivexnuke" target="_blank"><div class="link overlay"></div></a>
+			</div>
+
+			<div id="twitter" class="grid-item card contact interactive">
+				<div class="content">
+					<img src="assets/images/contact.svg" class="type"/>
+					<div class="content-img twitter-img"></div>
+				</div>
+				<a href="https://twitter.com/ivexnuke" target="_blank"><div class="link overlay"></div></a>
+			</div>
+
+			<div class="grid-item card quote">
+				<div class="content">
+					<img src="assets/images/quote_purple.svg" class="type"/>
+					<div class="content-img shigeru-img rounded"></div>
+				</div>
+				<h1 class="name">Shigeru Miyamoto</h1>
+				<p>"A delayed game is eventually good, a bad game is bad forever."</p>
+			</div>
+		</div>
+		<img src="assets/images/help.svg" id="help"/>
+	</div>
+	<div id="info-div-wrapper" class="yes-transition"></div>
+	<div id="profile-info" class="info-div yes-transition">
+		<div class="media-div">
+			<img src="assets/images/profile.jpg" class="info-img"/>
+		</div>
+		<div class="text-div">
+			<h1>What's That Equation Supposed to be?</h1>
+			<p>
+				This is a parametric equation I ended up with after bringing a two dimensional parametric equation into three dimensional homegeneous coordinates. To bring it back to two dimensions, divide X by Z and Y by Z. I may have messed up during the conversion... Anyways, click on the wolfram alpha icon for the answer or the wikipedia icon for more on homogeneous coordinates.
+			</p>
+			<a href="https://www.wolframalpha.com/input/?i=x+%3D+16sin(t)%2Fcsc%5E2(t),+y+%3D+(8cos%5E2(t)+%2B+8cos(t)+-+6csc%5E2(t)+%2B11cot(t)csc(t)+%2B+10)%2Fcsc%5E2(t)" target="_blank"><img src="assets/images/WolframAlpha-logo.svg" class="info-link-img"/></a>
+			<a href="https://en.wikipedia.org/wiki/Homogeneous_coordinates" target="_blank"><img src="assets/images/Wikipedia-logo-v2.svg" class="info-link-img"/></a>
+		</div>
+		<img class="back-button" src="assets/images/back.svg"/>
+	</div>
+	<div id="snakesteroids-info" class="info-div yes-transition">
+		<div class="media-div">
+			<img src="assets/images/snakesteroids.jpg" class="info-img"/>
+		</div>
+		<div class="text-div">
+			<h1>Snakesteroids</h1>
+			<p>
+				Snakesteroids is a mashup of two classic arcade genres. I combined the movement of asteroids and the rules of snake. The player controls a white spaceship using the arrow keys. They must gather white circles while avoiding pursuing red spaceships that perfectly follow the player's route. Initially made in 2 days for Mini Ludum Dare #67.
+			</p>
+			<a href="http://ludumdare.com/compo/minild-67/?action=preview&uid=99192" target="_blank"><img src="assets/images/ludumdare_logo.png" class="info-link-img" id="ludumdare-img"/></a>
+			<a href="https://github.com/KXue/Snakesteroids" target="_blank"><img src="assets/images/github.png" class="info-link-img" id="snakesteroids-github-img"/></a>
+			<a href="http://kxue.github.io/ldk/MiniLDH67/" target="_blank"><img src="assets/images/link-grey.svg" class="info-link-img" id="snakesteroids-link-img"/></a>
+		</div>
+		<img class="back-button" src="assets/images/back.svg"/>
+	</div>
+
+	<div id="overpopulate-info" class="info-div yes-transition">
+		<div class="media-div">
+			<img src="assets/images/overpopulate.jpg" class="info-img"/>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nRFzaIcVxgM#t=6m38s" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="text-div">
+			<h1>Overpopulate!</h1>
+			<p>
+				Overpopulate is a turn based strategy/board game. The idea is that both players must expand their territory to avoid overpopulating their land. Both players' choices are treated as happening at the same time. The goal is to outsurvive your opponent. This was my Mini Ludum Dare #69 submission made in 2 buggy sleepless days. There were several submissions at the time regarding the evils of colonization so I wanted to convey that perhaps colonization is caused by less evil intentions. Given perfect co-operation or just the fiercest aggression from both players, the game can easily end in a tie. In retrospect, I should probably have used a more understandable user interface. Perhaps give each player a set of cards to play that represent their moves and revealing the cards when both players are finished. If the embedded time doesn't work, skip to 6:38.
+			</p>
+			<a href="http://ludumdare.com/compo/minild-69/?action=preview&uid=99192" target="_blank"><img src="assets/images/ludumdare_logo.png" class="info-link-img" id="ludumdare-img"/></a>
+			<a href="https://github.com/KXue/MLD69" target="_blank"><img src="assets/images/github.png" class="info-link-img" id="snakesteroids-github-img"/></a>
+			<a href="http://kxue.github.io/ldk/MINILD69/" target="_blank"><img src="assets/images/link-grey.svg" class="info-link-img" id="snakesteroids-link-img"/></a>
+		</div>
+		<img class="back-button" src="assets/images/back.svg"/>
+	</div>
+	<div id="crysis-info" class="info-div yes-transition">
+		<div class="media-div">
+			<img src="assets/images/crysis.jpg" class="info-img"/>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/xvfVmlVcnJI" frameborder="0" allowfullscreen></iframe> 
+		</div>
+		<div class="text-div">
+			<h1>Crysis</h1>
+			<p>
+				This is a placeholder for a commercial game. I had nothing to do with the development Crysis. I only chose Crysis because the CryEngine has source code on github.
+			</p>
+			<a href="https://github.com/CRYTEK-CRYENGINE/CRYENGINE" target="_blank"><img src="assets/images/github.png" class="info-link-img" id="snakesteroids-github-img"/></a>
+			<a href="http://www.crysis.com/" target="_blank"><img src="assets/images/link-grey.svg" class="info-link-img" id="snakesteroids-link-img"/></a>
+		</div>
+		<img class="back-button" src="assets/images/back.svg"/>
+	</div>
+	<div id="help-info" class="info-div yes-transition">
+		<div class="centre-guide-div">
+			<h1>Icon Guide:</h1>
+			<ul>
+				<li><img src="assets/images/home_red.svg"/> Home, show all</li>
+				<li><img src="assets/images/about_orange.svg"/> About Me</li>
+				<li><img src="assets/images/games_green.svg"/> Games</li>
+				<li><img src="assets/images/resume_cyan.svg"/> Non-Code related stuff</li>
+				<li><img src="assets/images/contact_blue.svg"/> Contact information</li>
+				<li><img src="assets/images/jam_red.svg"/> Game jam: Usually not for profit games made under ~48 hours. Usually explores mechanics.</li>
+				<li><img src="assets/images/project_yellow.svg"/> Coding projects: Not for profit projects that take over 48 hours. Helps improve coding ability.</li>
+				<li><img src="assets/images/for_profit_green.svg"/> For profit: Full games made to sell</li>
+				<li><img src="assets/images/quote_purple.svg"/> Quote: Used as an excuse to finish this website behind schedule.</li>
+				<li>Cards that move tend to be interactive. they either move to show hidden information or are clickable. (not exclusive or)</li>
+			</ul>
+			<img class="back-button" src="assets/images/back.svg"/>
+		</div>
+	</div>
+	<script src = "js/app.js"></script>
+</body>
 </html>

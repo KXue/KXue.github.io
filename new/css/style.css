@@ -1,0 +1,614 @@
+p, ul {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+iframe{
+	width: 100%;
+	transform: translate3d(0,0,0); 
+}
+
+nav.card-stack ul li.card h1{
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+}
+
+.mobile-filter li{
+	display: inline-block;
+	width: 45%;
+}
+.mobile-filter img{
+	width: 100%;
+}
+
+.mobile-filter{
+	display:none;
+	background: #FAF0F0;
+	border-radius: 5px;
+  	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	overflow: hidden;
+}
+
+#profile{
+	display: inline-block;
+	position: relative;
+}
+
+.mobile-top-bar{
+	display: none;
+}
+
+.jumbotron-profile{
+	position: relative;
+	background: #FAF0F0;
+	border-radius: 5px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	width: 100%;
+  	margin: 5px auto;
+  	min-height: 200px;
+  	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	overflow: hidden;
+}
+
+.jumbotron-profile .me-img{
+	display: block;
+	position: relative;
+	width: 50%;
+	padding-bottom: 50%;
+	border-radius: 50%;
+	margin: 5px auto;
+	overflow:hidden;
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.jumbotron-profile .equation.more.overlay{
+	display:none;
+	opacity: 0;
+}
+
+.jumbotron-profile .me-img:hover .equation.more.overlay{
+	display:block;
+	opacity: 0.5;
+}
+
+.jumbotron-profile img.type{
+	width: 15%;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.jumbotron-profile h1.name{
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	border-bottom: 1px solid #dbd9d4;
+	font-size: 2.0em;
+	margin-bottom: 5%;
+	font-weight: 500;
+}
+
+.mobile-top-bar nav ul{
+	width: 90%;
+	margin: 5px auto;
+}
+
+.mobile-top-bar nav{
+	background: #FAF0F0;
+	border-radius: 5px;
+  	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	overflow: hidden;
+}
+
+.mobile-top-bar nav li{
+	display:inline-block;
+	width: 18%;
+}
+.mobile-top-bar nav li img{
+	width: 100%;
+}
+
+
+
+#wrapper{
+	width: 95%;
+    margin: 5px auto;
+    position: relative;
+}
+
+#content-div{
+	margin: 0 0 0 170px;
+	box-sizing: border-box;
+}
+
+#side-bar{
+	overflow: scroll;
+	display:block;
+	float: left;
+	position: fixed;
+	top: 5px;
+	border-right: 1px solid #dbd9d4;
+}
+
+#help{
+	position: fixed;
+	width: 36px;
+	height: 36px;
+	bottom: 15px;
+	right: 15px;
+}
+
+#ludumdare-img{
+	max-width: 50%;
+	min-width: 175px;
+}
+
+#snakesteroids-link-img{
+	width: 75px;
+}
+
+.type-icon{
+	display:block;
+}
+
+.main-icon{
+	width:75%;
+	display: block;
+	margin: 0px auto;
+}
+
+.centre-guide-div{
+	width:90%;
+	margin: 50px auto;
+}
+
+.centre-guide-div ul li{
+	vertical-align: top;
+	list-style: none;
+}
+
+.info-div{
+	overflow: hidden;
+	position: fixed;
+	bottom: 125%;
+	left: 2.5%;
+	width: 95%;
+	height: 90%;
+	background: #FAF0F0;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.info-div.showing{
+	bottom: 10%;
+	overflow-y: scroll;
+}
+
+#info-div-wrapper.showing{
+	visibility: visible;
+	opacity: 0.5;
+}
+
+.media-div{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 50px 0 0 4.5%;
+	width: 42%;
+	min-width: 175px;
+	vertical-align: top;
+}
+
+
+.info-img{
+	width: 100%;
+}
+
+.info-div .text-div{
+	position: relative;
+	display: block;
+	float: right;
+	width: 42%;
+	min-width: 175px;
+	margin: 50px 4.5% 0 0;
+}
+
+.info-div a{
+	vertical-align: middle;
+}
+
+.info-div p{
+	margin-bottom: 15px;
+}
+
+.info-div .text-div h1{
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	border-bottom: 1px solid #dbd9d4;
+	font-size: 1.8em;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+
+.info-link-img{
+	max-width: 100%;
+}
+
+.back-button{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 32px;
+}
+
+#info-div-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.yes-transition{
+	transition: all 250ms cubic-bezier(.25,.8,.25,1);
+	-webkit-transition: all 250ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 250ms cubic-bezier(.25,.8,.25,1);
+}
+
+.card{
+	position: relative;
+	background: #FAF0F0;
+	border-radius: 5px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	width: 160px;
+  	margin: 5px;
+  	min-height: 200px;
+  	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+div.overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display:none;
+	opacity: 0;
+	transition: all 250ms cubic-bezier(.25,.8,.25,1);
+	-webkit-transition: all 250ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 250ms cubic-bezier(.25,.8,.25,1);
+}
+
+div.overlay.more{
+	background: url("../assets/images/zoom.svg") 50% 50% no-repeat;
+	background-size: 75%;
+	background-color: #888;
+}
+
+div.overlay.link{
+	background: url("../assets/images/link.svg") 50% 50% no-repeat;
+	background-size: 75%;
+	background-color: #888;
+}
+
+div.overlay.download{
+	background: url("../assets/images/download.svg") 50% 50% no-repeat;
+	background-size: 75%;
+	background-color: #888;
+}
+
+.card:hover > div.overlay, .card:hover > a div.overlay, .card div.content:hover div.overlay{
+	display: block;
+	opacity: 0.5;
+}
+
+.card div.content-img {
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.rounded{
+	border-radius: 50%;
+}
+
+.card h1.name{
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	border-bottom: 1px solid #dbd9d4;
+	font-size: 1.2em;
+	margin-bottom: 5%;
+	font-weight: 300;
+}
+
+.interactive.loaded:hover{
+	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.card-stack .card.interactive.loaded:hover{
+	margin-bottom: -4px !important;
+}
+
+.card .content{
+	position: relative;
+}
+
+.card .content img.type{
+	margin-bottom: -24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card .content img.secondary.type{
+	margin-left: auto;
+	top: 0;
+	right: 0;
+}
+
+.interactive{
+	transition: all 250ms cubic-bezier(.25,.8,.25,1);
+	-webkit-transition: all 250ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 250ms cubic-bezier(.25,.8,.25,1);
+}
+
+.against.humanity{
+	padding-bottom: 32px;
+}
+
+.against.humanity p:first-child{
+	font-weight: 500;
+	font-size: 1em;
+}
+
+.against.humanity img.type{
+	width: 15%;
+	vertical-align: top;
+}
+
+.against.humanity.answer{
+	color: #000;
+	background-color: #FFF;
+}
+
+.against.humanity.question{
+	color: #FFF;
+	background-color: #000;
+}
+
+/*Set fixed underscore for now. We'll see if I end up cssing an input field or use additional white cards for it*/
+.against.humanity.question span{
+	width: 100px;
+	display: inline-block;
+	border-bottom: 1px solid #FFF;
+}
+
+.bottom-container{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.bottom-text{
+	font-size: 0.75em;
+	font-weight: 200;
+	display:inline;
+}
+
+.bottom-container img{
+	width: 15%;
+	vertical-align: middle;
+}
+
+.me-img{
+	background: url(../assets/images/profile.jpg) 50% 50% no-repeat;
+	background-size: 100%;
+	margin-bottom: 5%;
+}
+
+.shigeru-img{
+	background: url(../assets/images/Shigeru.jpg) 50% 50% no-repeat;
+	background-size: 120%;
+	margin-bottom: 5%;
+
+}
+
+.phaser-img{
+	background: url(../assets/images/phaser.png) 50% 50% no-repeat;
+	background-size: 85%;
+	margin-bottom: -10%;
+}
+
+.unity-img{
+	background: url(../assets/images/unity.jpg) 50% 50% no-repeat;
+	background-size: 100%;
+}
+
+.snakesteroids-img{
+	background: url(../assets/images/snakesteroids.jpg) 50% 50% no-repeat;
+	background-size: 180%;
+}
+
+.overpopulate-img{
+	background: url(../assets/images/overpopulate.jpg) 50% 50% no-repeat;
+	background-size: 150%;
+}
+
+.crysis-img{
+	background: url(../assets/images/crysis.jpg) 50% 50% no-repeat;
+	background-size: 180%;
+}
+
+.colour-resume-img{
+	background: url(../assets/images/colour_resume.png) 50% 50% no-repeat;
+	background-size: 100%;
+}
+
+.grey-resume-img{
+	background: url(../assets/images/grey_resume.png) 50% 50% no-repeat;
+	background-size: 100%;
+}
+
+.wordpress-img{
+	background: url(../assets/images/wordpress.png) 50% 50% no-repeat;
+	background-size: 90%;
+}
+
+#wordpress{
+	background: #21759B;
+}
+
+.twitter-img{
+	background: url(../assets/images/twitter.svg) 50% 50% no-repeat;
+	background-size: 75%;
+}
+
+#twitter{
+	background: #00ACED;
+}
+
+.email-img{
+	background: url(../assets/images/email.svg) 50% 50% no-repeat;
+	background-size: 75%;
+}
+
+.one-game-img{
+	background: url(../assets/images/1gam.png) 50% 50% no-repeat;
+	background-size: 75%;
+}
+
+.github-img{
+	background: url(../assets/images/github.png) 50% 50% no-repeat;
+	background-size: 75%;
+}
+
+nav .card.home{
+	background: #F44444;
+}
+
+nav .card.about{
+	background: rgb(239,155,15);
+}
+
+nav .card.games{
+	background: #44C444;
+}
+
+nav .card.docs{
+	background: #44C4C4;
+}
+
+nav .card.contact{
+	background: #35465C;
+}
+
+.progress-bar{
+	margin-top: 5px;
+	height: 20px;
+	border: 1px solid #444;
+}
+
+.twenty{
+	width: 20%;
+}
+
+.zero{
+	width: 0;
+}
+
+.progress{
+	height: 20px;
+	background:#44C444;
+}
+
+@media all and (max-height: 630px){
+	.mobile-filter{
+		display:block;
+	}
+	nav.card-stack{
+		visibility: hidden;
+	}
+}
+
+@media all and (max-height: 525px){
+	.mobile-filter li{
+		width:30%;
+	}
+}
+
+@media all and (max-height: 425px){
+	.mobile-filter li{
+		width:18%;
+	}
+}
+
+@media all and (max-width: 540px){
+
+	#side-bar{
+		visibility: hidden;
+	}
+
+	.mobile-top-bar{
+		display:block;
+	}
+
+	#content-div{
+		margin: 5px 0;
+	}
+}
+
+@media all and (max-width: 410px){
+
+	.media-div{
+		float: none;
+		width: 90%;
+		margin: 50px auto 5px auto;
+	}
+
+	.info-div .text-div{
+		float: none;
+		width: 90%;
+		margin: 15px auto;
+		margin: 5px auto;
+	}
+}
