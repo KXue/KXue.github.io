@@ -1,0 +1,178 @@
+body{
+	background-color: #dadada;
+}
+p, nav .card h1{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+}
+/*===NAV SPECIFIC===*/
+nav .card h1{
+	color: #fff;
+	border:none;
+	font-size: 1.5em;
+}
+nav .card.home{
+	background: #F44444;
+}
+
+nav .card.about{
+	background: rgb(239,155,15);
+}
+
+nav .card.games{
+	background: #44C444;
+}
+
+nav .card.docs{
+	background: #44C4C4;
+}
+
+nav .card.contact{
+	background: #35465C;
+}
+
+nav .card.filters{
+	background: #333366;
+}
+/*===CARDS===*/
+.card{
+	position: relative;
+	padding: 2px;
+	background: #FAF0F0;
+	width: 146px;
+	height: 230px;
+	border-radius: 5px;
+	-moz-outline-radius: 5px;
+	margin: 2px;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card h1{
+	border-bottom: 1px solid #dbd9d4;
+	font-size: 1.2em;
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-weight: 500;
+}
+.card p, .card header{
+	padding: 0 5px;
+}
+.card p span{
+	font-weight: bold;
+}
+.card.answer{
+	color: #000;
+	background-color: #FFF;
+}
+.card.question{
+	color: #FFF;
+	background-color: #000;
+}
+.card.question span{
+	width: 100px;
+	display: inline-block;
+	border-bottom: 1px solid #FFF;
+}
+.card.smaller .main-img{
+	width:115px;
+	height: 115px;
+}
+.card.smaller h1{
+	font-size: 1.0em;
+}
+.card .bottom-container{
+	position: absolute;
+	bottom: 7px;
+	left: 7px;
+}
+.card .bottom-text{
+	padding: 0;
+	font-size: 0.65em;
+	font-weight: 200;
+	display:inline;
+}
+
+.card .bottom-container img{
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+}
+.card .main-img{
+	display:block;
+	margin:auto;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	-moz-outline-radius: 50%;
+	margin-top: -24px;
+	object-fit: cover;
+}
+.card .type-img{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+/*===CARD STACK===*/
+.card-stack{
+	display: inline-flex;
+	min-width: 150px;
+	height: 220px;
+	margin: 2px;
+}
+.card-stack .card{
+	margin: 0;
+	margin-right: -122px;
+}
+.card-stack .card:last-child, .card-stack .highlightable:hover{
+	margin-right: 0;
+}
+/*===HIDDEN FOR FILTERING===*/
+.hidden{
+	visibility: collapse;
+}
+/*===HIGHLIGHTABLE CARDS===*/
+.highlightable{
+    transition: all 250ms cubic-bezier(.25,.8,.25,1);
+}
+.highlightable:hover{
+	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    outline: 1px solid #cecece;
+}
+.highlightable.card:hover{
+	margin-top: -5px;
+    margin-bottom: 5px;
+}
+/*===PROGRESS BAR===*/
+.progress-bar{
+	margin: auto;
+	width: 95%;
+	height: 15px;
+	border: 1px solid #444;
+}
+.progress{
+	background:#44C444;
+	height: inherit;
+}
+.ten{
+	width: 10%;
+}
+.twenty{
+	width:20%;
+}
+.thirty{
+	width:30%;
+}
+/*===WRAPPER OF ALL CARDS===*/
+.wrapper{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-around;
+	margin: 2px;
+}
