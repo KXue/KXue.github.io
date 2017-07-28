@@ -3,36 +3,53 @@ body{
 }
 p, nav .card h1{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 0.9em;
+	border:none;
 }
 /*===NAV SPECIFIC===*/
-nav .card h1{
+nav h1{
 	color: #fff;
 	border:none;
 	font-size: 1.5em;
 }
-nav .card.home{
+nav #home{
 	background: #F44444;
 }
-
-nav .card.about{
+nav #about{
 	background: rgb(239,155,15);
 }
-
-nav .card.games{
+nav #games{
 	background: #44C444;
 }
-
-nav .card.docs{
+nav #docs{
 	background: #44C4C4;
 }
-
-nav .card.contact{
+nav #contact{
 	background: #35465C;
 }
+nav #filters{
+	background: #663366;
+}
+#hover-text{
+	position: fixed;
+	padding: 15px;
 
-nav .card.filters{
-	background: #333366;
+}
+/*---BOTTOM CONTAINER PROPERTIES---*/
+.bottom-container{
+	position: absolute;
+	bottom: 7px;
+	left: 7px;
+}
+.bottom-container img{
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+}
+.card p.bottom-text{
+	padding: 0;
+	font-size: 0.7em;
+	font-weight: 300;
+	display:inline;
 }
 /*===CARDS===*/
 .card{
@@ -42,8 +59,8 @@ nav .card.filters{
 	width: 146px;
 	height: 230px;
 	border-radius: 5px;
-	-moz-outline-radius: 5px;
 	margin: 2px;
+	overflow: hidden;
 
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -56,81 +73,54 @@ nav .card.filters{
 	font-family: "Playfair Display", serif;
 	font-weight: 500;
 }
+.card p{
+	font-size: 0.9em;
+}
 .card p, .card header{
 	padding: 0 5px;
 }
 .card p span{
 	font-weight: bold;
 }
-.card.answer{
-	color: #000;
-	background-color: #FFF;
-}
-.card.question{
-	color: #FFF;
-	background-color: #000;
-}
-.card.question span{
-	width: 100px;
-	display: inline-block;
-	border-bottom: 1px solid #FFF;
-}
-.card.smaller .main-img{
-	width:115px;
-	height: 115px;
-}
-.card.smaller h1{
-	font-size: 1.0em;
-}
-.card .bottom-container{
-	position: absolute;
-	bottom: 7px;
-	left: 7px;
-}
-.card .bottom-text{
-	padding: 0;
-	font-size: 0.65em;
-	font-weight: 200;
-	display:inline;
-}
-
-.card .bottom-container img{
-	width: 22px;
-	height: 22px;
-	vertical-align: middle;
-}
-.card .main-img{
-	display:block;
+.card > .main-view{
+	display: block;
+	position: relative;
 	margin:auto;
 	width: 130px;
 	height: 130px;
-	border-radius: 50%;
-	-moz-outline-radius: 50%;
 	margin-top: -24px;
+	overflow: hidden;
+}
+.main-view img{
+	width: 130px;
+	height: 130px;
 	object-fit: cover;
 }
 .card .type-img{
 	width: 24px;
 	height: 24px;
-	border-radius: 50%;
 }
 /*===CARD STACK===*/
 .card-stack{
 	display: inline-flex;
 	min-width: 150px;
-	height: 220px;
+	height: 230px;
 	margin: 2px;
 }
 .card-stack .card{
-	margin: 0;
-	margin-right: -122px;
+	margin: 2px;
+	margin-left: 0px;
+	margin-right: -120px;
 }
-.card-stack .card:last-child, .card-stack .highlightable:hover{
-	margin-right: 0;
+.card-stack .card:last-child, .card-stack > .highlightable:hover, .card-stack > .selected{
+	margin-right: 0px;
 }
 /*===HIDDEN FOR FILTERING===*/
 .hidden{
 	visibility: collapse;
+}
+.shown{
+	visibility: visible;
 }
 /*===HIGHLIGHTABLE CARDS===*/
 .highlightable{
@@ -141,7 +131,10 @@ nav .card.filters{
     -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-    outline: 1px solid #cecece;
+    border: 1px ridge #777;
+}
+.highlightable:hover .showmore{
+	opacity: 0.6;
 }
 .highlightable.card:hover{
 	margin-top: -5px;
@@ -166,6 +159,71 @@ nav .card.filters{
 }
 .thirty{
 	width:30%;
+}
+/*---QUESTION AND ANSWER PROPERTIES---*/
+.answer{
+	color: #000;
+	background-color: #FFF;
+}
+.question{
+	color: #FFF;
+	background-color: #000;
+}
+.question span{
+	width: 100px;
+	display: inline-block;
+	border-bottom: 1px solid #FFF;
+}
+.rounded{
+	border-radius: 50%;
+}
+/*---SHOWMORE PROPERTIES---*/
+.code{
+	background: url("../assets/images/project.svg") 50% 50% no-repeat;
+}
+.download{
+	background: url("../assets/images/download.svg") 50% 50% no-repeat;
+}
+.info{
+	background: url("../assets/images/zoom.svg") 50% 50% no-repeat;
+}
+.link{
+	background: url("../assets/images/link.svg") 50% 50% no-repeat;
+}
+.showmore{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-size: 75%;
+	background-color: #888;
+}
+/*---SMALLER CARD PROPERTIES---*/
+.smaller h1{
+	font-size: 1.0em;
+}
+.smaller p{
+	font-size: 0.8em;	
+}
+.smaller .main-view{
+	width:115px;
+	height: 115px;
+}
+.smaller .main-view img{
+	width:115px;
+	height: 115px;
+}
+.smaller.main-view{
+	margin-top: -10px;
+	width:115px;
+	height: 115px;
+}
+/*---TWITTER EXCEPTION---*/
+.twitter-background{
+	background: #00ACED;
+	color: #fff;
 }
 /*===WRAPPER OF ALL CARDS===*/
 .wrapper{
