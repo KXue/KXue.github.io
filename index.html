@@ -6,303 +6,62 @@
 	<meta name="author" content="Yi Fei Xue"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<!--Various Favicons for various devices-->
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png"/>
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png"/>
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png"/>
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png"/>
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png"/>
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png"/>
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png"/>
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png"/>
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png"/>
-	<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png"/>
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png"/>
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png"/>
-	<link rel="manifest" href="assets/images/favicon/manifest.json"/>
-	<meta name="msapplication-TileColor" content="#ffffff"/>
-	<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png"/>
-	<meta name="theme-color" content="#ffffff"/>
-
-	<!--Font-->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300" rel="stylesheet"/>
-
-	<!--CSS links-->
 	<link type="text/css" rel="stylesheet" href="css/resetti.css"/>
 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="css/overlay.css"/>
+	<link type="text/css" rel="stylesheet" href="css/card.css"/>
+	<link type="text/css" rel="stylesheet" href="css/overlay.css"/>
 
 	<title>Yi Fei Xue</title>
+
 </head>
 <body>
 	<div class="wrapper">
-		<section class="card about always-on">
-			<img src="assets/images/about_orange.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/profile.jpg" class="main-view rounded"/>
-				<div class="highlightable showmore info"></div>
-			</div>
-			<header><h1>Yi Fei Xue</h1></header>
-			<p>Game developer in training.</p>
-		</section>
-		<nav class="card-stack always-on">
-			<div class="card highlightable filter" id="home">
-				<img src="assets/images/home.svg" class="type-img"/>
-				<div class="main-view rounded">
-					<img src="assets/images/home.svg"/>
+		<section class="card red highlightable" >
+			<a href="">
+				<div class="card-interior">
+					<div class="card-image-container darker">
+						<img class="main-card-image" src="assets/images/Conway_gameplay.png">
+					</div>
+					<div class="card-text darker">
+						<h2>Conway's Game Of Questions</h2>
+						<p>Description</p>
+					</div>
 				</div>
-				<h1>Show All</h1>
-			</div>
-			<div class="card highlightable filter" id="about">
-				<img src="assets/images/about.svg" class="type-img"/>
-				<div class="main-view rounded">
-					<img src="assets/images/about.svg"/>
+			</a>
+		</section>
+		<section class="card orange highlightable" >
+			<a href="">
+				<div>
+					<!-- <img class="main-card-image" src="assets/images/Conway_gameplay.png"> -->
+					<div class="darker">
+						<h2>Conway's Game Of Questions</h2>
+						<p>Description</p>
+					</div>
 				</div>
-				<h1>About</h1>
-			</div>
-			<div class="card highlightable filter" id="games">
-				<img src="assets/images/games.svg" class="type-img"/>
-				<div class="main-view rounded">
-					<img src="assets/images/games.svg"/>
+			</a>
+		</section>
+		<section class="card green highlightable" >
+			<a href="">
+				<div>
+					<!-- <img class="main-card-image" src="assets/images/Conway_gameplay.png"> -->
+					<div class="darker">
+						<h2>Conway's Game Of Questions</h2>
+						<p>Description</p>
+					</div>
 				</div>
-				<h1>Games</h1>
-			</div>
-			<div class="card highlightable filter" id="docs">
-				<img src="assets/images/resume.svg" class="type-img"/>
-				<div class="main-view rounded">
-					<img src="assets/images/resume.svg"/>
+			</a>
+		</section>
+		<section class="card blue highlightable" >
+			<a href="">
+				<div>
+					<!-- <img class="main-card-image" src="assets/images/Conway_gameplay.png"> -->
+					<div class="darker">
+						<h2>Conway's Game Of Questions</h2>
+						<p>Description</p>
+					</div>
 				</div>
-				<h1>Non-Code</h1>
-			</div>
-			<div class="card highlightable filter" id="contact">
-				<img src="assets/images/contact.svg" class="type-img"/>
-				<div class="main-view rounded">
-					<img src="assets/images/contact.svg"/>
-				</div>
-				<h1>Contact/Links</h1>
-			</div>
-			<div class="card" id="filters">
-				<img src="assets/images/filters.svg" class="type-img"/>
-				<div class="main-view rounded">
-					<img src="assets/images/filters.svg"/>
-				</div>
-				<h1>Filters</h1>
-			</div>
-		</nav>
-		<div class="card-stack about">
-			<section class="card answer highlightable">
-				<img class="type-img" src="assets/images/about_orange.svg"/>
-				<p>I want to convey my thoughts, ideas and feelings to others.</p>
-				<div class="bottom-container">
-					<img src="assets/images/faceIcon_transBG.png"/>
-					<p class="bottom-text">Pls don't sue me CAH</p>
-				</div>
-			</section>
-			<section class="card question highlightable">
-				<img class="type-img" src="assets/images/about_orange.svg"/>
-				<p>I make video games because <span></span>.</p>
-				<div class="bottom-container">
-					<img src="assets/images/faceIcon_transBG.png"/>
-					<p class="bottom-text">Pls don't sue me CAH</p>
-				</div>
-			</section>
-		</div>
-		<section class="card about">
-			<img class="type-img" src="assets/images/about_orange.svg"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/phaser.png"/>
-				<a href="https://phaser.io/" target="_blank"><div class="showmore link"></div></a>
-			</div>
-			<header><h1>Set to Begun</h1></header>
-			<div class="progress-bar">
-				<div class="progress thirty"></div>
-			</div>
-			<p>Made 3/10 <span class="phaser">Phaser</span> games.</p>
-		</section>
-		<section class="card about">
-			<img class="type-img" src="assets/images/about_orange.svg"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/unity.jpg"/>
-				<a href="https://unity3d.com/" target="_blank"><div class="showmore link"></div></a>
-			</div>
-			<header><h1>Sit Ununited</h1></header>
-			<div class="progress-bar">
-				<div class="progress ten"></div>
-			</div>
-			<p>Made 1/10 <span class="unity">Unity</span> games.</p>
-		</section>
-		<section class="card games">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/snakesteroids.jpg"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Snakesteroids</h1></header>
-			<p>
-				<span class="phaser">Phaser<span>, <span class="arcade">Arcade</span>, <span class="jam">Game Jam<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="http://ludumdare.com/compo/minild-67/?action=preview&uid=99192" target="_blank"><img src="assets/images/LD.jpg" class="highlightable"/></a>
-				<a href="http://kxue.github.io/ldk/MiniLDH67/" target="_blank"><img src="assets/images/link-grey.svg" class="highlightable"/></a>
-				<a href="https://github.com/KXue/Snakesteroids" target="_blank"><img src="assets/images/github.png" class="highlightable"></a>
-			</div>
-		</section>
-		<section class="card games">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/overpopulate.jpg"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Overpopulate!</h1></header>
-			<p>
-				<span class="phaser">Phaser<span>, <span class="tbs">TBS</span>, <span class="jam">Game Jam<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="http://ludumdare.com/compo/minild-69/?action=preview&uid=99192" target="_blank"><img src="assets/images/LD.jpg" class="highlightable"/></a>
-				<a href="http://kxue.github.io/ldk/MINILD69/" target="_blank"><img src="assets/images/link-grey.svg" class="highlightable"/></a>
-				<a href="https://github.com/KXue/MLD69" target="_blank"><img src="assets/images/github.png" class="highlightable"/></a>
-			</div>
-		</section>
-		<section class="card games smaller">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/conway.png"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Conway's Game of Questions</h1></header>
-			<p>
-				<span class="unity">Unity<span>, <span class="platformer">Platformer</span>, <span class="jam">Game Jam<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="https://ciechroma.itch.io/conways-game-of-questions" target="_blank"><img src="assets/images/itch.png" class="highlightable"/></a>
-				<a href="https://github.com/KXue/conway-game-of-questions" target="_blank"><img src="assets/images/github.png" class="highlightable"></a>
-			</div>
-		</section>
-		<section class="card games">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/ivan.png"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Irritated Ivan</h1></header>
-			<p>
-				<span class="cpp">C++<span>, <span class="roguelike">Roguelike</span>, <span class="project">Class Project<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="https://github.com/KXue/IrritatedIvan" target="_blank"><img src="assets/images/github.png" class="highlightable"></a>
-			</div>
-		</section>
-		<section class="card games">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/gitgud.png"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Git Gud</h1></header>
-			<p>
-				<span class="android">Android</span>, <span class="bullethell">Bullet Hell</span>, <span class="project">Class Project<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="https://github.com/KXue/GitGud" target="_blank"><img src="assets/images/github.png" class="highlightable"></a>
-			</div>
-		</section>
-		<section class="card games">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/unshackled.png"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Unshackled</h1></header>
-			<p>
-				<span class="swift">Swift</span>, <span class="platformer">Platformer</span>, <span class="project">Class Project<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="https://github.com/KXue/Unshackled" target="_blank"><img src="assets/images/github.png" class="highlightable"></a>
-			</div>
-		</section>
-		<section class="card games smaller">
-			<img src="assets/images/games_green.svg" class="type-img"/>
-			<div class="main-view rounded highlightable">
-				<img src="assets/images/explosiondrive.png"/>
-				<div class="showmore info"></div>
-			</div>
-			<header><h1>Explosion Drive</h1></header>
-			<p>
-				<span class="Phaser">Phaser</span>, <span class="action">Action</span>, <span class="jam">Game Jam<span>.
-			</p>
-			<div class="bottom-container">
-				<a href="https://ciechroma.itch.io/explosion-drive" target="_blank" ><img src="assets/images/itch.png" class="highlightable"/></a>
-				<a href="https://github.com/KXue/GMTKJam" target="_blank"><img src="assets/images/github.png" class="highlightable"></a>
-			</div>
-		</section>
-		<section class="card docs highlightable">
-			<img src="assets/images/resume_cyan.svg" class="type-img"/>
-			<img src="assets/images/resume.png" class="main-view"/>
-			<header><h1>Resume</h1></header>
-			<a href="assets/resume/YiFeiXue.pdf" target="_blank"><div class="showmore download"></div></a>
-		</section>
-		<section class="card docs highlightable">
-			<img src="assets/images/resume_cyan.svg" class="type-img"/>
-			<div class="main-view rounded">
-				<img src="assets/images/wordpress.svg"/>
-			</div>
-			<header><h1>Wordpress</h1></header>
-			<a href="https://mentaldumpblog.wordpress.com/" target="_blank"><div class="showmore link"></div></a>
-		</section>
-		<section class="card contact highlightable">
-			<img src="assets/images/contact_blue.svg" class="type-img"/>
-			<img src="assets/images/email.svg" class="main-view"/>
-			<header><h1>Email</h1></header>
-			<a href="mailto:ivexnuke@gmail.com"><div class="showmore link"></div></a>
-		</section>
-		<section class="card contact highlightable">
-			<img src="assets/images/contact_blue.svg" class="type-img"/>
-			<div class="main-view rounded">
-				<img src="assets/images/github.png" class="main-view rounded"/>
-			</div>
-			<header><h1>GitHub</h1></header>
-			<a href="https://github.com/KXue" target="_blank"><div class="showmore link"></div></a>
-		</section>
-		<section class="card contact highlightable">
-			<img src="assets/images/contact_blue.svg" class="type-img"/>
-			<img src="assets/images/1gam.png" class="main-view smaller"/>
-			<header><h1>One Game a Month</h1></header>
-			<a href="http://www.onegameamonth.com/ivexnuke" target="_blank"><div class="showmore link"></div></a>
-		</section>
-		<section class="card contact highlightable twitter-background">
-			<img src="assets/images/contact.svg" class="type-img"/>
-			<img src="assets/images/twitter.svg" class="main-view"/>
-			<header><h1>Twitter</h1></header>
-			<a href="https://twitter.com/ivexnuke" target="_blank"><div class="showmore link"></div></a>
+			</a>
 		</section>
 	</div>
-	<div class="overlay hidden">
-		<section class="information">
-			<img src="assets/images/back.svg" class="back-button">
-			<img src="assets/images/gitgud.png" class="overlay-image">
-			<header><h1>Title</h1></header>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</section>
-	</div>
-	<p id="hover-text" class="hidden">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	<script
-	  	src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
-	  	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-	  	crossorigin="anonymous">
-	</script>
-	<script src = "js/app.js"></script>
 </body>
 </html>
