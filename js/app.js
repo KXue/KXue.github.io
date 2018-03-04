@@ -29,7 +29,6 @@ function runThis(){
 	$(".card-stack .card").click(cardStackPressed);
 };
 $(document).ready(function(){
-	dBug("This is a log");
 	runThis();
 });
 function dBug(data){
