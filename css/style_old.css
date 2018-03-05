@@ -117,11 +117,22 @@ nav #filters{
 }
 /*===HIDDEN FOR FILTERING===*/
 .hidden{
+<<<<<<< HEAD
 	visibility: collapse;
 }
 .shown{
 	visibility: visible;
 }
+=======
+	display: none;
+}
+/*.shown{
+	display: block;
+}
+.shown.card-stack{
+	display: inline-flex;
+}*/
+>>>>>>> 06325f89449d2bc65e8586b1718fe49ff9cedf37
 /*===HIGHLIGHTABLE CARDS===*/
 .highlightable{
     transition: all 250ms cubic-bezier(.25,.8,.25,1);

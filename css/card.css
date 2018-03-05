@@ -1,0 +1,164 @@
+
+.card{
+	background: #FAF0F0;	
+	width: 180px;
+	height: 252px;
+
+	border-radius: 2px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	overflow: hidden;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card > a{
+	height:100%;
+}
+
+.card-image-container, .card-text{
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.card-interior{
+	height:100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-image-container{
+	position: relative;
+	margin-bottom: 4px;
+ 	flex: 1;
+ 	overflow: hidden;
+}
+
+.main-card-image{
+	height:100%;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	right: -9999px;
+	bottom: -9999px;
+	margin: auto;
+}
+
+.card-text{
+ 	flex: inherit;
+}
+
+.progress-bar{
+	margin: auto;
+	width: 95%;
+	height: 15px;
+	border: 1px solid #444;
+}
+.progress{
+	background:#44C444;
+	height: inherit;
+}
+.ten{
+	width: 10%;
+}
+.twenty{
+	width:20%;
+}
+.thirty{
+	width:30%;
+}
+
+.red, .red.darkest{
+	background-color: #590B0B;
+}
+.red .darker{
+	background-color: #812424;
+}
+.red .normal{
+	background-color: #9E4242;
+}
+.red .lighter{
+	background-color: #C16767;
+}
+.red .lightest{
+	background-color: #EBA3A3;
+}
+.red .tint{
+	background-color: #EBA3A3;
+}
+.red h2, .red p{
+	color: #EBA3A3;
+}
+
+.orange, .orange.darkest{
+	background-color: #592E0B;
+}
+.orange .darker{
+	background-color: #814E24;
+}
+.orange .normal{
+	background-color: #9E6C42;
+}
+.orange .lighter{
+	background-color: #C19067;
+}
+.orange .lightest{
+	background-color: #EBC4A3;
+}
+.orange .tint{
+	background-color: #EBC4A3;
+}
+.orange h2, .orange p{
+	color: #EBC4A3;
+}
+
+.green, .green.darkest{
+	background-color: #084708;
+}
+.green .darker{
+	background-color: #1D671D;
+}
+.green .normal{
+	background-color: #357F35;
+}
+.green .lighter{
+	background-color: #539A53;
+}
+.green .lightest{
+	background-color: #82BC82;
+}
+.green .tint{
+	background-color: #82BC82;
+}
+.green h2, .green p{
+	color: #82BC82;
+}
+
+.blue, .blue.darkest{
+	background-color: #063535;
+}
+.blue .darker{
+	background-color: #164D4D;
+}
+.blue .normal{
+	background-color: #285F5F;
+}
+.blue .lighter{
+	background-color: #3E7474;
+}
+.blue .lightest{
+	background-color: #628D8D;
+}
+.blue .tint{
+	background-color: #628D8D;
+}
+.blue h2, .blue p{
+	color: #628D8D;
+}
