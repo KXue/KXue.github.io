@@ -1,0 +1,98 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.grid {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card {
+    border-radius: 5px;
+}
+
+.profile > * {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.profile {
+    background: #e6ecf0;
+}
+
+.profile h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.round-image {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.profile-image {
+    padding-bottom: 80%;
+    background-image: url('../assets/images/ProfileProfile.jpg');
+    background-position-y: 35%;
+    margin-top: 5%;
+    margin-bottom: 5px;
+}
+
+.interactive {
+    transition: all 250ms cubic-bezier(.25, .8, .25, 1);
+}
+
+.interactive:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.project-jam {
+    background-color: #2D0204;
+}
+
+.project-class {
+    background-color: #2E1502;
+}
+
+.project-commercial {
+    background-color: #011C1A;
+}
+
+.project-personal {
+    background-color: #052502;
+}
+
+.grid-item {
+    width: 160px;
+    height: 225px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.grid-item--width2 {
+    width: 322px;
+    max-width: 100%;
+}
+
+.grid-item--height2 {
+    height: 455px;
+}
