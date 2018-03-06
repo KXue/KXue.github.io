@@ -1,13 +1,3 @@
-<<<<<<< HEAD:js/app.js
-$('.grid').isotope({
-    // options
-
-    itemSelector: '.grid-item',
-    layoutMode: 'masonry',
-    masonry: {
-        columnWidth: 162,
-    }
-=======
 var hoverText = $("#hover-text");
 function showHoverText(ev) {
 	hoverText.removeClass("hidden");
@@ -41,5 +31,4 @@ function runThis(){
 $(document).ready(function(){
 	dBug("This is a log");
 	runThis();
->>>>>>> 06325f89449d2bc65e8586b1718fe49ff9cedf37:js/app_old.js
 });
