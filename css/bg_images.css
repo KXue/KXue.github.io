@@ -1,0 +1,92 @@
+.profile-image {
+    background:
+      url('../assets/images/background/ProfileProfile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 80%;
+}
+.pirates-image {
+    background:
+      url('../assets/images/background/Pirates.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.lost-box-image {
+    background:
+      url('../assets/images/background/LostBox.png');
+    background-repeat: no-repeat;
+    background-position: 40% center;
+    background-size: cover;
+}
+.magiator-image {
+    background:
+      url('../assets/images/background/Magiator.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.missiles-image{
+    background:
+    url('../assets/images/background/Missiles.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.explosion-drive-image {
+    background:
+      url('../assets/images/background/ExplosionDrive.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.unshackled-image {
+    background:
+      url('../assets/images/background/Unshackled.png');
+    background-repeat: no-repeat;
+    background-position: 30% center;
+    background-size: cover;
+}
+.git-gud-image {
+    background:
+      url('../assets/images/background/GitGud.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.irritated-ivan-image {
+    background:
+      url('../assets/images/background/Ivan.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.conway-image {
+    background:
+      url('../assets/images/background/Conway.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.overpopulate-image {
+    background:
+      url('../assets/images/background/Overpopulate.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.snakesteroids-image {
+    background:
+        url('../assets/images/background/Snakesteroids.png');
+    background-repeat: no-repeat;
+    background-position: 25% center;
+    background-size: cover;
+}
+.portfolio-image {
+    background:
+        url('../assets/images/background/Portfolio2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

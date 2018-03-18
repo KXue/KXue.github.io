@@ -4,6 +4,10 @@ $('.grid').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'masonry',
     masonry: {
-        columnWidth: 162,
+        columnWidth: 167,
     }
+});
+$('.filter-group').on( 'click','a', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('.grid').isotope({ filter: filterValue });
 });

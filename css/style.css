@@ -1,3 +1,4 @@
+/* Constraints: 360px+ width */
 h1,
 h2,
 h3,
@@ -12,6 +13,53 @@ p {
 a{
     text-decoration: none !important;
 }
+a *{
+    color: black;
+}
+
+.profile-top-container{
+    display:flex;
+    justify-content: space-between;
+}
+.profile-top-container > *{
+    display:inline-block;
+}
+
+.contact-container{
+    display:flex;
+    justify-content: space-between;
+    width:45%;
+    align-items: center;
+}
+.contact-container > a{
+    width:22%;
+}
+.contact-container img{
+    width:100%;
+}
+
+.filter-group{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.12em;
+    padding-bottom:5px;
+}
+a[data-filter*="*"]{
+    color:#000000;
+}
+a[data-filter*=".project-jam"]{
+    color:#912F2C;
+}
+a[data-filter*=".project-class"]{
+    color:#915B2C;
+}
+a[data-filter*=".project-personal"]{
+    color:#1B5558;
+}
+a[data-filter*=".project-commercial"]{
+    color:#237228;
+}
 
 .grid {
     width: 95%;
@@ -19,23 +67,23 @@ a{
     margin-top: 10px;
 }
 
-.card {
-    border-radius: 5px;
+.grid-item {
+    width: 162px;
+    height: 228px;
+    float:left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
 }
 
-.profile > * {
-    width: 80%;
-    margin: auto;
-    display: block;
+.grid-item--width2 {
+    width: 329px;
+    max-width: 100%;
 }
 
-.profile {
-    background: #e6ecf0;
-}
-
-.profile h1 {
-    font-size: 2em;
-    text-align: center;
+.grid-item--height2 {
+    height: 461px;
 }
 
 .round-image {
@@ -45,54 +93,8 @@ a{
     background-size: cover;
 }
 
-.profile-image {
-    padding-bottom: 80%;
-    background-image: url('../assets/images/ProfileProfile.jpg');
-    background-position-y: 35%;
-    margin-top: 5%;
-    margin-bottom: 5px;
-}
-
-.interactive {
-    transition: all 250ms cubic-bezier(.25, .8, .25, 1);
-}
-
-.interactive:hover {
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    margin-top: -5px;
-    margin-bottom: 5px;
-}
-
-.project-jam {
-    background-color: #2D0204;
-}
-
-.project-class {
-    background-color: #2E1502;
-}
-
-.project-commercial {
-    background-color: #011C1A;
-}
-
-.project-personal {
-    background-color: #052502;
-}
-
-.grid-item {
-    width: 160px;
-    height: 225px;
-    margin-bottom: 5px;
-    overflow: hidden;
-}
-
-.grid-item--width2 {
-    width: 322px;
-    max-width: 100%;
-}
-
-.grid-item--height2 {
-    height: 455px;
+.profile-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

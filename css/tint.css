@@ -1,0 +1,33 @@
+.tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    float:left;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex:none;
+    transition: all .25s linear;
+}
+
+
+.tint.profile:before{
+    background-color: rgba(192, 222, 237, 0.4);
+}
+
+.tint.project-jam:before{
+    background-color: rgba(145, 47, 44, 0.4);
+}
+
+.tint.project-class:before{
+    background-color: rgba(145, 91, 44, 0.4);
+}
+.tint.project-commercial:before{
+    background-color: rgba( 35,114, 40, 0.4);
+}
+.tint.project-personal:before{
+    background-color: rgba( 27, 85, 88, 0.4);
+}
+
+.tint:hover:before { background: none; }
