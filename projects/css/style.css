@@ -19,11 +19,13 @@ section{
     padding-top:20px;
     display:flex;
     justify-content: center;
-    align-content: flex-start;
+    align-content: start;
 }
-
 section > *{
     max-width: 50%;
+}
+img{
+    object-fit:contain;
 }
 article{
     flex:auto;
