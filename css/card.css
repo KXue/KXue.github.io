@@ -1,0 +1,15 @@
+.card {
+    border-radius: 5px;
+    display: flex;                   
+    flex-direction: column;
+	justify-content: space-between;
+}
+
+.card > *{
+    padding: 0 5px;
+}
+
+.card > *:last-child{
+	margin-top:auto;
+    height: 38%;
+}

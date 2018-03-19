@@ -1,0 +1,57 @@
+.project > *{
+    position:relative;
+    transition: all .25s linear;
+    opacity: 0;
+}
+
+.profile > * {
+    position: relative;
+    background: rgba(192, 222, 237, 0.85);
+}
+
+.profile > h1 {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.project > h1{
+    font-size: 1.2em;
+}
+
+.project:hover > *{
+    opacity: 100;
+}
+
+/* http://paletton.com/#uid=7010u0kmeiebmDkghqerKaWAt42 */
+
+.project-jam {
+    background-color: #CF130E;
+}
+
+.project-jam > *{
+    background-color: rgba(255,127,123, 0.85);
+}
+
+.project-class {
+    background-color: #CF670E;
+}
+
+.project-class > *{
+    background-color: rgba(255,184,123, 0.85);
+}
+
+.project-commercial {
+    background-color: #0BA315;
+}
+
+.project-commercial > *{
+    background-color: rgba(108,224,116, 0.85);
+}
+
+.project-personal {
+    background-color: #09787D;    
+}
+
+.project-personal > *{
+    background-color: rgba( 96,193,198, 0.85);
+}
