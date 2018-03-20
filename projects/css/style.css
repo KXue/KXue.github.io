@@ -41,3 +41,25 @@ h1{
 body{
     background-color: #FAF0F0;
 }
+.contact-container{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-container > a{
+    margin-right: 10px;
+    width:50px;
+}
+.contact-container img{
+    width:100%;
+}
+
+@media all and (max-width: 900px){
+    section{
+        flex-direction: column;
+    }
+    section > *{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
