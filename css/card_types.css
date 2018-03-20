@@ -21,6 +21,11 @@
 .project:hover > *{
     opacity: 100;
 }
+@media all and (max-width: 1024px){
+    .project > *{
+        opacity: 100;
+    }
+}
 
 /* http://paletton.com/#uid=7010u0kmeiebmDkghqerKaWAt42 */
 

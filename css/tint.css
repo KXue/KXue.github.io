@@ -13,16 +13,39 @@
 
 .tint.project-jam:hover:before{
     background-color: rgba(207, 19, 14, 0.4);
+    opacity:100;
 }
 
 .tint.project-class:hover:before{
     background-color: rgba(207,103, 14, 0.4);
+    opacity:100;
 }
 .tint.project-commercial:hover:before{
     background-color: rgba(11,163, 21, 0.4);
+    opacity:100;
 }
 .tint.project-personal:hover:before{
     background-color: rgba(  9,120,125, 0.4);
+    opacity:100;
 }
 
-.tint:before { background: none; }
+.tint:before { opacity:0; }
+@media all and (max-width: 1024px){
+    .tint.project-jam:before{
+        background-color: rgba(207, 19, 14, 0.4);
+        opacity:100;
+    }
+    
+    .tint.project-class:before{
+        background-color: rgba(207,103, 14, 0.4);
+        opacity:100;
+    }
+    .tint.project-commercial:before{
+        background-color: rgba(11,163, 21, 0.4);
+        opacity:100;
+    }
+    .tint.project-personal:before{
+        background-color: rgba(  9,120,125, 0.4);
+        opacity:100;
+    }
+}

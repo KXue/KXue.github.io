@@ -54,7 +54,7 @@ body{
     width:100%;
 }
 
-@media all and (max-width: 900px){
+@media all and (max-width: 1024px){
     section{
         flex-direction: column;
     }
