@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    /* color: #D9E7F2; */
+}
+p > a{
+    /* font-weight: bolder; */
+    text-decoration: underline;
+    color: aliceblue;
+}
+h2{
+    font-size: 1.4em;
+}
+.about_me{
+    height: 100%;
+    width: 220px;
+    padding: 15px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    position: fixed; 
+    text-align: left;
+    color: aliceblue;
+    background-color: #FF6523;
+}
+.about_me > *{
+    margin-top: 5px;
+}
+.contact{
+    padding-top: 10px;
+    border-top: 1px solid white;
+    margin-top: 15px;
+    text-align: center;
+}
+.contact img{
+    width: 21%;
+    height: auto;
+    margin: 2px;
+}
+
+.profile{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 5px auto;
+    border-radius: 50%;
+}
+.about_me > p{
+    font-size: 14px;
+}
+.lineup{
+    margin-left: 250px;
+    /* margin: 0 auto; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding-top: 7px;
+    position: relative;
+    text-align: left;
+    /* width: 95%; */
+}
+.card{
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 160px;
+    margin: 0 0 7px 7px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    background: black;
+    border-radius: 2px;
+    background-size: 100%;
+}
+
+.card > .title{
+    position: absolute;
+    margin-left: -100%;
+    display: inline-block;
+    color: black;
+    padding: 5px 5px;
+    /* text-shadow: 1px, 1px, 1px, black; */
+    background: rgba(255, 255, 255, 0.8);
+}
+.card > .options{
+    display: inline-block;
+    position: absolute;
+    margin-right: -100%;
+    bottom: 0;
+    right: 0;
+    padding: 5px 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.options > a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.options > a.github{
+    background-image: url(../assets/images/github_dark.png);
+}
+.options > a.itch{
+    background-image: url(../assets/images/itch_dark.svg);
+}
+.options > a.youtube{
+    background-image: url(../assets/images/youtube.png);
+}
+
+.interactive:hover > .title{
+    margin-left: 0;
+}
+
+.interactive:hover > .options{
+    margin-right: 0;
+}
+.interactive{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.interactive, .interactive *{
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.interactive:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
