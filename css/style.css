@@ -58,7 +58,7 @@ h2{
     margin: 1%;
 }
 .about_me > p{
-    font-size: 1rem;
+    font-size: 1em;
 }
 .about_me > p > span{
     display: block;
