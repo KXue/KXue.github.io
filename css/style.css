@@ -12,6 +12,9 @@ p > a{
     text-decoration: underline;
     color: aliceblue;
 }
+h1{
+    text-align: center;
+}
 h2{
     font-size: 1.4em;
 }
@@ -31,6 +34,18 @@ h2{
 .about_me > *{
     margin-top: 5px;
 }
+.images_container{
+    width: 95%;
+    max-width:220px;
+    margin: auto;
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 5px auto;
+    border-radius: 50%;
+}
 .contact{
     padding-top: 10px;
     border-top: 1px solid white;
@@ -40,18 +55,14 @@ h2{
 .contact img{
     width: 21%;
     height: auto;
-    margin: 2px;
-}
-
-.profile{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin: 5px auto;
-    border-radius: 50%;
+    margin: 1%;
 }
 .about_me > p{
-    font-size: 14px;
+    font-size: 1rem;
+}
+.about_me > p > span{
+    display: block;
+    height: 7px;
 }
 .lineup{
     margin-left: 250px;
@@ -79,6 +90,8 @@ h2{
 
 .card > .title{
     position: absolute;
+    top: 0;
+    left: 0;
     margin-left: -100%;
     display: inline-block;
     color: black;
@@ -129,4 +142,46 @@ h2{
 }
 .interactive:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media only screen and (max-width: 1000px){
+    .profile{
+        display: none;
+    }
+    .about_me > h1{
+        margin-top: 5%;
+        font-size: 3em;
+    }
+    .card > .options{
+        margin-right: 0;
+    }
+    .card > .title{
+        margin-left: 0;
+    }
+    .about_me{
+        width: 100%;
+        display: block;
+        height: auto;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    .about_me > p{
+        padding: 5px 3%;
+    }
+    .about_me > p > span.optional{
+        display: inline
+    }
+    .lineup{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 500px){
+    .card{
+        display: block;
+        width: 95%;
+        padding-top: 63%;
+        height: 0%;
+        margin: 7px auto;
+    }
 }
